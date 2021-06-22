@@ -15,7 +15,7 @@ sql.execute("""CREATE TABLE IF NOT EXISTS users(
 	message INT
 )""")
 
-vk_session = vk_api.VkApi(token = 'ee536db05b40780a677b8b1bdffa06b8fdd3a704e23b694ee7e8bb426055d40439837bec71b1c10f67f43')
+vk_session = vk_api.VkApi(token = tok)
 longpoll = VkBotLongPoll(vk_session, 201700447)
 
 def sender(id, text):
